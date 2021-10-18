@@ -1,0 +1,12 @@
+.ListOfGifs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
+    grid-gap: 1rem;
+}
+
+.LastSearch .ListOfGifs{
+    max-width: 619px;
+    grid-template-columns: repeat( auto-fill, minmax(90px, 1fr) );
+    margin-top: 1rem;
+}

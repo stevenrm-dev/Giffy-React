@@ -1,0 +1,34 @@
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.App-header__link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: 4px solid #FFB975;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #FFB975;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.App-header__link:hover {
+    filter: hue-rotate(340deg);
+}
+
+.App-header__img {
+    width: 70px;
+}
+
+.App-header__title {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}

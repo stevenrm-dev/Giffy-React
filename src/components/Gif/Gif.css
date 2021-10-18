@@ -1,0 +1,28 @@
+.Gif {
+    position: relative;
+}
+
+.Gif-tx {
+    position: absolute;
+    transform: translate(0px, 0px);
+    padding: .2rem;
+    border-top-left-radius: .5rem;
+    background-color: #000;
+    color: #fff;
+    opacity: 50%;
+}
+
+.Gif-img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.LastSearch .Gif-img {
+    height: 90px;
+}
+
+.LastSearch .Gif-tx {
+    display: none;
+}
