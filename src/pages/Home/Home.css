@@ -1,3 +1,22 @@
 .LastSearch {
     max-width: 100%;
 }
+
+.App-search {
+    background-color: #fff;
+    color: #0c0e18;
+    border: none;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+    padding: .5rem .65rem;
+}
+
+.App-send {
+    background-color: #FFB975;
+    color: #0c0e18;
+    font-weight: 600;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    border: none;
+    padding: .5rem .8rem;
+}

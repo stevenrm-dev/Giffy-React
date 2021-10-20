@@ -24,8 +24,8 @@ export default function Home() {
     return(
         <>
             <form onSubmit={handleSubmit}>
-                <input onChange={handleChange} type="text" value={keyword} placeholder="Busca aquí el GIF" />
-                <button>Encuéntralo</button>
+                <input className="App-search" onChange={handleChange} type="text" value={keyword} placeholder="Busca aquí el GIF" />
+                <button className="App-send">Encuéntralo</button>
             </form>
             <div className="LastSearch">
                 <h3 className="App-title">Última busqueda</h3>
