@@ -4,7 +4,7 @@ import GifsContext from '../context/GifsContext.jsx'
 
 export function useGifs({keyword} = {keyword: null}) {
     const [loading, setLoading] = useState(false)
-    // const [gifs, setGifs] = useState([])
+    //const [gifs, setGifs] = useState([])
     const {gifs, setGifs} = useContext(GifsContext)
 
     useEffect(function() {

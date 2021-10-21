@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header.jsx';
 import SearchResults from './pages/SearchResults/SearchResults.jsx';
+import Detail from './pages/Detail/Detail.jsx'
 import StaticContext from './context/StaticContext.jsx';
 import {GifsContextProvider} from './context/GifsContext.jsx';
 
@@ -16,6 +17,7 @@ function App() {
       <section className="App-content">
           <GifsContextProvider>
           <Route path="/search/:keyword" component={SearchResults} />
+          <Route path="/gif/:id" component={Detail} />
           </GifsContextProvider>
       </section>
     </div>

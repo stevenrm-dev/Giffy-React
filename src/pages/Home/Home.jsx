@@ -8,7 +8,7 @@ const Popular_Gifs =['lotr', 'over garden wall', 'star wars']
 
 export default function Home() {
     const [keyword, setKeyword] = useState('');
-    const [path, pushLocation]= useLocation();
+    const [, pushLocation]= useLocation();
 
     const {loading, gifs} = useGifs();
 
