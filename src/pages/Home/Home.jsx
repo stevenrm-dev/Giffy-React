@@ -10,7 +10,7 @@ export default function Home() {
     const [keyword, setKeyword] = useState('');
     const [path, pushLocation]= useLocation();
 
-    const {gifs} = useGifs();
+    const {loading, gifs} = useGifs();
 
     const handleSubmit = evt => {
         evt.preventDefault();

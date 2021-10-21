@@ -1,12 +1,18 @@
 import React from 'react';
-import ListOfGifs from '../../components/ListOfGifs/ListOfGifs';
-import { useGifs } from '../../hooks/useGifs';
+import LoadingIcon from '../../components/LoadingIcon/LoadingIcon.jsx'
+import ListOfGifs from '../../components/ListOfGifs/ListOfGifs.jsx';
+import {useGifs} from '../../hooks/useGifs.jsx';
 
 function SearchResults({params}) {
     const {keyword} = params;
-    const {gifs} = useGifs({keyword});
+    const {loading, gifs} = useGifs({keyword});
 
-    return <ListOfGifs gifs={gifs} />
+    return <>
+        {loading
+        ? <LoadingIcon />
+        : <ListOfGifs gifs={gifs} />
+        }
+    </>
 }
 
-export default React.memo(SearchResults);
+export default SearchResults;
